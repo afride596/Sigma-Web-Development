@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal Selector */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Element Selector */
+        div{
+            background-color: blueviolet;
+        }
+
+
+        /* class selector */
+        .red{
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: small;
+            font-style: oblique;
+        }
+
+
+        /* id selector */
+        #green{
+            color: aqua;
+        }
+
+
+        /* child selector */
+        div>p{
+            background-color: brown;
+            color: rgb(41, 191, 191);
+        }
+
+        /* desendent Selector */
+        div p{
+            background-color: rgb(199, 221, 221);
+        }
+        /* pseudo selector */
+        a:visited{
+            color: rgb(244, 25, 13);
+        }
+        a:active{
+            background-color: red;
+            color: black;
+            border-radius: 100px;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        
+       
+
+    
+    </style>
+</head>
+<body>
+    <div class="red" id="green">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est soluta amet, quisquam nesciunt optio minima. Praesentium dolorem ab at. Debitis inventore sunt animi at amet veniam repellat expedita iste asperiores.</h1>
+    </div> 
+     <div id="green">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est soluta amet, quisquam nesciunt optio minima. Praesentium dolorem ab at. Debitis inventore sunt animi at amet veniam repellat expedita iste asperiores.</h1>
+    </div> 
+
+     <div >
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est soluta amet, quisquam nesciunt optio minima. Praesentium dolorem ab at. Debitis inventore sunt animi at amet veniam repellat expedita iste asperiores.</p>
+        </article>
+        
+    </div>
+
+    <div>
+        <a href="http://www.google.com">Google</a>
+        <a href="mailto:mohammadafride2003@gmail.com">Mail</a>
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">New Google</a>
+    </div>
+</body>
+</html>

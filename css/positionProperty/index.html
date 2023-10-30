@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>postionProperty</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .parent {
+        border: 2px solid black;
+        margin: 10px;
+        /* padding: 50px; */
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+      }
+
+      .box {
+        border: 2px solid red;
+        width: 50%;
+        height: 200px;
+        /* margin: 30px; */
+       
+      }
+
+      .box1 {
+        background-color: brown;
+        /* position: absolute; */
+        top: 0px;
+        position: sticky;
+        
+      }
+
+      .box2 {
+        background-color: chocolate;
+        /* position: relative; */
+        /* top: 100px; */
+        /* left: 50px; */
+        /* bottom: 100px; */
+      }
+
+      .box3 {
+        background-color: darkorchid;
+        /* position: relative; */
+        /* z-index: -1; */
+        position: fixed;
+        right: 2px;
+      }
+
+      .box4 {
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>

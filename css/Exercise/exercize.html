@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design A card</title>
+    <style>
+      body {
+        background-color: #b3c3bd61;
+      }
+      .card {
+        width: 350px;
+        height: 500px;
+        border: 2px solid rgba(204, 202, 202, 0.862);
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 5px 2px rgba(225, 216, 216, 0.543);
+      }
+      .image img {
+        width: 330px;
+        height: 200px;
+        /* height: 550px; */
+        /* padding: px; */
+        margin: 3px;
+        border-radius: 20px;
+        position: relative;
+        left: 7px;
+        top: 5px;
+      }
+      .section {
+        /* margin: px; */
+        padding: 13px;
+      }
+      .section > span {
+        border-radius: 15px;
+        /* width: 25px; */
+        border: 2px solid rgba(218, 217, 217, 0.491);
+        margin: 5px;
+        padding: 4px;
+        position: relative;
+        left: 10px;
+        top: 15px;
+        box-shadow: 2px 2px 5px 10px rgba(243, 242, 242, 0.374);
+        text-align: center;
+        text-transform: capitalize;
+        color: rgba(102, 102, 103, 0.592);
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .title > h2 {
+        text-transform: capitalize;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, Arial, Helvetica,
+          sans-serif;
+          color: #212121b0;
+      }
+      .title{
+        margin: 25px;
+        
+      }
+      .card-description{
+        width: 300px;
+        position: relative;
+        left:20px;
+        font-size: 18px;
+        color: #737272d3;
+      }
+      .button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+       top: 25px;
+       left: -10px;
+       
+      
+
+      }
+      .button>a>input{
+        color: #03a3fff5;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        background-color: rgba(179, 202, 212, 0.157);
+        border-color: #b5b5b556;
+        box-shadow: 1px 1px 50px 3px rgba(131, 149, 150, 0.285);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image">
+        <img src="./pexels-manos-stavrakakis-18537295.jpg" alt="img" />
+      </div>
+
+      <div class="section">
+        <span>Nature</span>
+        <span>Lake</span>
+      </div>
+      <div class="title">
+        <h2>beauty of nature</h2>
+      </div>
+      <div class="card-description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sequi
+          alias explicabo laborum, perspiciatis nulla.
+        </p>
+      </div>
+      <div class="button">
+        <a href="#">
+            <input type="button" value="Read More">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

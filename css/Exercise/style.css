@@ -1,0 +1,20 @@
+:root{
+    --secondVariable:grey
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+nav{
+    background-color:var(--secondVariable)
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+
+}

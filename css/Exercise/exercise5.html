@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing a layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+        }
+
+        .nav {
+
+            background-color: aqua;
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 24px;
+            padding: 1rem 2rem;
+        }
+
+        ul li a {
+            text-decoration: none;
+
+        }
+
+        .container {
+            height: 600px;
+            background-color: brown;
+            margin: 0rem 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem;
+            border: 2px solid black;
+        }
+
+        .container .box1 {
+            height: 400px;
+            width: 400px;
+            border-radius: 1rem;
+            background-color: rgb(15, 95, 201);
+            border: 2px solid black;
+        }
+
+        .container .box2 {
+            height: 400px;
+            width: 400px;
+            border-radius: 1rem;
+            background-color: rgb(15, 71, 22);
+            border: 2px solid black;
+        }
+
+        .logo {
+            height: 50px;
+            display: flex;
+            justify-content: end;
+            position: sticky;
+            top: 500px;
+            right: 50px;
+        }
+
+        .info {
+            height: 200px;
+            margin: 3rem 15rem auto;
+            border-radius: 1rem;
+            border: 4px solid black;
+        }
+
+        .txt {
+            text-align: center;
+            padding: 4rem;
+        }
+
+        .foot {
+            height: 50px;
+            margin: 1rem 0;
+            background-color: #19191d;
+        }
+
+        .footer-txt {
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="logo">
+        <img src="https://freelogopng.com/images/all_img/1658587303instagram-png.png" height="80" width="80" alt="">
+    </div>
+    <section>
+        <div class="container">
+            <div class="box1"></div>
+            
+            <div class="box2"></div>
+        </div>
+
+        <div class="info">
+            <div class="txt">
+                <h1>
+                    Welcome to Sigma Web Development Express
+                </h1>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <div class="footer-txt">
+                <h5>
+                    © 2023 Sigma Web Dev Expres All rights reserved
+                </h5>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+

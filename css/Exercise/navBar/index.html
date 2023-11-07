@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVBAR</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .items > ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        /* border:2px solid red; */
+        width: 750px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      .items > ul > li > a {
+        list-style: none;
+        text-decoration: none;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        align-content: center;
+        gap: 25px;
+      }
+      .heading {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: larger;
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./Dark-logo.png" alt="Dark_logo" width="180" />
+        </div>
+        <div class="items">
+          <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">About us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="heading">
+        <h1>Download UltraEdit for Windows</h1>
+      </div>
+      <div class="para">
+        <p>
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows version of the text editor.
+        </p>
+      </div>
+      <div class="submit">
+        <button>DOWNLOAD MAC OR LINUX VERSION</button>
+      </div>
+    </main>
+  </body>
+</html>

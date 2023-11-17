@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="/css/grid.css">        
+
+    <style>
+        .container{
+            border: 2px solid black;
+           
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 300px 400px 500px;
+
+        }
+        .box{
+            border: 2px solid rgb(212, 15, 15);
+            height: 130px;
+            width:70px;
+
+        }
+        .box4{
+          grid-row:1/2 ;
+          grid-column: 1/2;
+        }
+        .box5{
+            grid-row:1/2 ;
+            grid-column: 1/2;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+
+    </div>
+   
+</body>
+</html>

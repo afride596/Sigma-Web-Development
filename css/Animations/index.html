@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 55px;
+            background-color: red;
+            margin: 3px;
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+animation: slide 1s ease-in-out 1s infinite forwards; 
+            }
+            
+
+        
+        @keyframes slide{
+            from{
+                transform: translateX(25%);
+            }
+            to{
+                background-color: black;
+                transform: translateX(75%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

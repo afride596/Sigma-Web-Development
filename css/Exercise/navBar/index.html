@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./UE.png" type="image/x-icon" />
     <title>NAVBAR</title>
 
     <style>
       * {
         margin: 0;
         padding: 0;
+      }
+      nav {
+        margin-top: 25px;
       }
 
       nav {
@@ -23,27 +27,89 @@
         /* border:2px solid red; */
         width: 750px;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         text-decoration: none;
       }
-      .items > ul > li > a {
-        list-style: none;
-        text-decoration: none;
+      .items li {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        /* border: 2px solid red; */
       }
       main {
+        height: 40vh;
+        /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         align-items: center;
 
-        align-content: center;
-        gap: 25px;
+        gap: 55px;
+      }
+      .heading h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        font-weight: 10;
       }
       .heading {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: larger;
-        font-weight: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+      }
+      .heading a img {
+        position: relative;
+        top: 7px;
+      }
+      main p {
+        /* border: 2px solid red; */
+        width: 1000px;
+        font-size: 25px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: auto;
+        text-align: center;
+        line-height: 40px;
+      }
+      .submit button {
+        /* border: 2px solid red; */
+        padding: 12px 20px;
+        font-size: 14px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #00b6d1;
+        color: #ffff;
+        border-radius: 5px;
+        border: none;
+        font-weight: 500;
+        /* border-color:#00b6d1 ; */
+      }
+      .downloaders {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 200px 200px 200px;
+        place-content: center;
+        place-items: center;
+      }
+      .english {
+        background-color: #f9f9f9;
+        border: 2px solid black;
+        height: 150px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+      }
+      .downsection {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
       }
     </style>
   </head>
@@ -53,19 +119,95 @@
         <div class="logo">
           <img src="./Dark-logo.png" alt="Dark_logo" width="180" />
         </div>
+
         <div class="items">
           <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">About us</a></li>
+            <li>
+              <span> Products </span>
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                  stroke="#141B34"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <span> Pricing </span>
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                  stroke="#141B34"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <span> Resource </span>
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                  stroke="#141B34"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <span> About us </span>
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                  stroke="#141B34"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <img
+                src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                alt="languages"
+              />
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <div class="heading">
-        <h1>Download UltraEdit for Windows</h1>
+        <h1>Download <strong>UltraEdit</strong> for Windows</h1>
+        <a href="#"><img src="./Reviews.png" alt="" /></a>
       </div>
       <div class="para">
         <p>
@@ -77,5 +219,133 @@
         <button>DOWNLOAD MAC OR LINUX VERSION</button>
       </div>
     </main>
+    <section>
+      <div class="downloaders">
+        <div class="english">
+          <div>
+            <strong>English</strong>
+          </div>
+          <div class="downsection">
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+          </div>
+        </div>
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+        <div class="english">
+          <div>
+            <strong> Italiano </strong>
+           
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+        <div class="english">
+          <div>
+            <strong> Deutsch </strong>
+          </div>
+          <div class="downsection">
+            <button>Download 64-bit</button>
+            <button>Download 32-bit</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
   </body>
 </html>

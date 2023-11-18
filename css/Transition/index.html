@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistion</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            height: 5vh;
+            width: 10vw;
+            background-color: black;
+            margin: auto;
+           
+        }
+        .box:hover{
+            transform: translateY(100px)
+            scale(2);
+            background-color:rgb(255, 0, 102);
+            transition:all 
+            0.5s ease-in-out;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

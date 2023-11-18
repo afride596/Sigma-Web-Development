@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animatiom</title>
+</head>
+<style>
+    .container{
+        height: 80vh;
+        width: 90vw;
+        background-color: black;
+        position: relative;
+    }
+    .ball{
+        height: 10vh;
+        width: 10vh;
+        background-color: rgb(222, 22, 22);
+        border-radius: 50px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .ball:hover{
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: bounce 1s ease infinite alternate-reverse;
+    }
+    @keyframes bounce{
+        from {transform: translate(-400px)
+        }
+        to{
+            transform: translateX(-300px)
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="ball">
+        </div>
+    </div>
+</body>
+</html>

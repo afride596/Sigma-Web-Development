@@ -11,42 +11,47 @@
       padding: 0;
     }
     .container {
+      gap: 50px;
       /* border: 1px solid red; */
       width: 100vw;
       height: 100vh;
       box-sizing: border-box;
       background-color: #171a1d;
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* flex-wrap: wrap; */
     }
     .card {
-      position: absolute;
       /* border: 1px solid rgb(177, 168, 168); */
+      width: 660px;
       height: 120px;
-      width: 87vw;
       color: #e6e6e6;
-      /* margin: auto; */
       background-color: rgb(0, 0, 0);
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       font-size: 12px;
-      left: 50px;
-      top: 75px;
+      /* min-width: 815px; */
+      max-width: 800px;
       border-radius: 5px;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      
+      align-items: center;
+      flex-direction: row;
+      gap: 15px;
+      /* flex-wrap: nowrap; */
     }
     .left-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
-      /* width: auto; */
+      /* border: 1px solid red; */
     }
     .left-section img {
       position: relative;
-      top: 6px;
-      left: -20px;
-      border-radius: 10px;
-      width: 195px;
+      border-radius: 15px;
+      width: 190px;
     }
     .duration {
       display: flex;
@@ -54,31 +59,33 @@
       align-items: center;
       background-color: #000002;
       position: absolute;
-      bottom: 7px;
-      right: 35px;
+      bottom: 5px;
+      right: 10px;
       width: 40px;
       height: 18px;
-      border-radius:5px ;
-      border: 1px solid red;
+      border-radius: 5px;
+      /* border: 1px solid red; */
     }
-    .title {
-      position: relative;
-      top: 8px;
-    }
-
-
-
-    .second-section {
-      position: absolute;
-      top: 40px;
+    .right-section {
       display: flex;
+      flex-direction: column;
       gap: 10px;
-      justify-content: flex-start;
+      /* border: 1px solid red; */
+      position: relative;
+      top: 10px;
+      height: 75px;
+    }
+    /* .Title {
+    } */
+
+    .info {
+      display: flex;
+      gap: 7px;
     }
   </style>
   <body>
     <div class="container">
-      <div class="card">
+      <!-- <div class="card">
         <div class="left-section">
           <img
             src="https://i.ytimg.com/vi/uFbCTidM-xw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDGgn0Kh5ek5hkE0xk4iFuv1znLPw"
@@ -95,15 +102,15 @@
               course
             </h3>
           </div>
-
-          <div class="second-section">
-            <div class="channelName">CodeWithHarry</div>
-            <div class="views">333K</div>
+          <div class="info">
+            <div class="channelName">CodeWithHarry &nbsp;&nbsp;.</div>
+            <div class="views">333K &nbsp;.</div>
             <div class="months">2 months ago</div>
           </div>
-        </div>
+        </div> -->
       </div>
-    </div>
+      
+
     <script src="./script.js"></script>
   </body>
 </html>

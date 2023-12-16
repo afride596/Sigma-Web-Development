@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix||Object</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: rgb(26, 182, 156); */
+      }
+      .container {
+        position: relative;
+        top: 35px;
+        margin: auto;
+        width: 90vw;
+        height: 90vh;
+        border-radius: 130px;
+        /* border: 2px solid red; */
+        background-color: rgb(232, 231, 231);
+      }
+      nav {
+        width: 70vw;
+        position: relative;
+        border-radius: 130px;
+        /* z-index: ; */
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: #050b08;
+        left: 200px;
+      }
+      nav a {
+        /* background-color: #929292; */
+        color: #ffffff;
+      }
+      nav a img {
+        width: 70px;
+        filter: invert(1);
+        cursor: pointer;
+      }
+      .btn {
+        position: relative;
+        right: -80px;
+      }
+      button {
+        background-color: rgb(107, 111, 111);
+        padding: 8px 30px;
+        border: none;
+        border-radius: 75px;
+      }
+      button:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nava">
+        <a><img src="./Screenshot 2023-12-17 012026.jpg" alt="" /></a>
+        <a href="">Home</a>
+        <a href="">Support</a>
+        <a href="">Contact</a>
+        <a href="">PhoneNumber</a>
+        <div class="btn">
+          <button type="button">Login</button>
+        </div>
+      </nav>
+    </div>
+    <script>
+        const logo = document.querySelector(".nava");
+        logo.style.backgroundColor="red"
+    </script>
+  </body>
+</html>

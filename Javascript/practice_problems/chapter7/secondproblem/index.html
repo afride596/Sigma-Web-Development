@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>secondprolem</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <li class="box box1">Home</li>
+      <li class="box box2">Music</li>
+      <li class="box box3">Product</li>
+    </div>
+    
+    <script>
+    //   const box = document.getElementsByClassName("container");
+    //   box[1].firstElementChild.style.backgroundColor = "red"; 
+    //   box[0].lastElementChild.style.backgroundColor = "red";
+
+    const box=document.querySelectorAll(".box")
+    box.forEach((e)=>{
+        e.style.backgroundColor="cyan"
+    })
+
+    </script>
+  </body>
+</html>

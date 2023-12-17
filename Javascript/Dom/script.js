@@ -10,6 +10,15 @@
 
 
 
-let con=document.querySelector(".box")
+// let con=document.querySelector(".box")
 
-console.log(con.nodeName);
+// console.log(con.nodeName);
+// First Method 
+let a=document.getElementsByTagName("div")[0]
+// a.innerHTML=a.innerHTML+'<h1>I AFRIDE</h1>'
+
+// let we see more methods
+
+let div=document.createElement("div")
+div.innerHTML='<h1>Hiiii</h1>'
+a.prepend(div)

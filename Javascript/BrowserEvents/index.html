@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <!-- An event is nothing but generating signal to show something is Happening -->
+    <div class="container">
+      <div class="box">Hey I am a box</div>
+    </div>
+    <button id="btt">Click me</button>
+    <script>
+      //List of all  Mouse Events
+
+      // https://javascript.info/mouse-events-basics#mouse-event-types
+
+      // click Event 
+      // let btn = document.getElementById("btt");
+      // btn.addEventListener("click", () => {
+      //   box=document.querySelector(".box");
+      //   let div=document.createElement('div')
+      //   div.textContent="yas"
+      //   div.className='box'
+      // //  console.log(div);
+      //  box.replaceWith(div)
+
+      //  dbl click
+
+      // let btn = document.getElementById("btt");
+
+      // btn.addEventListener("dblclick", () => {
+      //   box=document.querySelector(".box");
+      //   let div=document.createElement('div')
+      //   div.textContent="yas"
+      //   div.className='box'
+      // //  console.log(div);
+      //  box.replaceWith(div)
+         
+// let btn = document.getElementById("btt");
+
+      // btn.addEventListener("dblclick", () => {
+      //   box=document.querySelector(".box");
+      //   let div=document.createElement('div')
+      //   div.textContent="yas"
+      //   div.className='box'
+      // //  console.log(div);
+      //  box.replaceWith(div)
+
+      // let btn = document.getElementById("btt");
+
+      // btn.addEventListener("contextmenu", () => {
+      //   box=document.querySelector(".box");
+      //   let div=document.createElement('div')
+      //   div.textContent="yas"
+      //   div.className='box'
+      //   alert("Dont hack us by clicking right click ")
+      // //  console.log(div);
+      //  box.replaceWith(div)
+
+      let btn = document.getElementById("btt");
+
+      btn.addEventListener("keydown", () => {
+        box=document.querySelector(".box");
+        let div=document.createElement('div')
+        div.textContent="yas"
+        div.className='box'
+       console.log(div);
+       box.replaceWith(div)
+      });
+    </script>
+  </body>
+</html>

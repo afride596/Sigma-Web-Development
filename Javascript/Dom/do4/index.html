@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <ul class="Languages">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // function addlanguages(langName){
+    //     let Add=document.querySelector(".Languages")
+    //     let li = document.createElement("li");
+    //     li.innerHTML=  `${langName}`
+    //     Add.appendChild(li)
+    // }
+// More optimal Approch to create new element 
+    let optiAddlanguages=(languages)=>{
+        let li=document.createElement('li')
+        li.appendChild(document.createTextNode(languages))
+        // li.textContent=`${languages}`
+        document.querySelector('.Languages').appendChild(li)
+
+    }
+    optiAddlanguages("python")
+    optiAddlanguages("RubyRails")
+
+    //Lets talk About Edit and Remove
+
+    //Edit1
+    let second=document.querySelector("li:nth-child(2)");
+    const newLi=document.createElement('li')
+    newLi.textContent='C#'
+    second.replaceWith(newLi)
+
+
+    //Edit2
+    let firstLang=document.querySelector("li:first-Child")
+    let creatnewLi=document.createElement("li")
+    creatnewLi.textContent="ReactJs";
+    firstLang.replaceWith(creatnewLi)
+
+
+    // Remove 
+
+    const langLang=document.querySelector('li:last-child')
+    langLang.remove()
+    
+</script>
+</html>

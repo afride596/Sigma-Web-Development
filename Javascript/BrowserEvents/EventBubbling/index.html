@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        * { margin: 0px; padding: 0px }
+        .container{
+            height: 300px;
+            border: 2px solid rgb(255, 0, 0);
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgb(244, 255, 127);
+        }
+        .childContainer{
+            height: 200px;
+            border: 2px solid red;
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgb(158, 112, 215);
+        }
+        .child{
+            height: 100px;
+            border: 2px solid red;
+            width: 80%;
+            margin: 50px auto;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child"></div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.container').addEventListener('click',(e)=>{
+            e.stopPropagation()
+            alert('conatiner was click')
+        })
+         document.querySelector('.childContainer').addEventListener('click',(e)=>{
+            e.stopPropagation()
+            alert('childconatiner was click')
+        }) 
+        document.querySelector('.child').addEventListener('click',(e)=>{
+            e.stopPropagation()
+            alert('child was click')
+            console.log(e.clientX,e.clientY)
+           
+        })
+        function randomcolorGenrator() {
+  let letters = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+  ];
+  let colorr = "#";
+  for (let value = 0; value < 6; value++) {
+    let randomcolor = Math.floor(Math.random() * 16);
+    colorr += letters[randomcolor];
+  }
+  return colorr;
+}
+// it  execute continously at certain interval
+
+        // let timerid=setInterval(()=>{
+        //     document.querySelector('.childContainer').style.backgroundColor=randomcolorGenrator()
+
+        // },1000)
+        // clearInterval(timerid)
+
+// it only execute one time After setTimeout function Run 
+
+        // let timerid=setTimeout(()=>{
+        //     document.querySelector('.childContainer').style.backgroundColor=randomcolorGenrator()
+
+        // },5000)
+
+    </script>
+    
+</body>
+</html>

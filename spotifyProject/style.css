@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #080707;
+  color: aliceblue;
+}
+.container {
+  display: flex;
+  /* gap: 5px; */
+  /* border: 2px solid red; */
+  /* width: 100%;
+    height: 100%; */
+}
+.left-container {
+  /* border: 2px solid red; */
+  width: 20vw;
+  margin: 10px;
+  border-radius: 75px;
+  padding: 2px;
+}
+.right-container {
+  /* border: 2px solid rgb(232, 48, 48); */
+  width: 80vw;
+}
+.home {
+  background-color: #121212;
+  border-radius: 10px;
+  height: 150px;
+  padding: 22px;
+  margin-bottom: 10px;
+}
+.home img {
+  width: 90px;
+  filter: invert();
+}
+.home ul li {
+  display: flex;
+  justify-items: center;
+  gap: 15px;
+  width: 20px;
+  padding-top: 25px;
+}
+.home ul li img {
+  display: flex;
+  justify-items: center;
+  width: 30px;
+}
+.library {
+  background-color: #121212;
+  border-radius: 10px;
+  min-height: 70vh;
+  padding: 22px;
+  position: relative;
+  flex-wrap: wrap;
+}
+.heading {
+  display: flex;
+  gap: 10px;
+  padding-top: 14px;
+  font-weight: bold;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 15px;
+}
+.heading img {
+  width: 30px;
+  filter: invert(1);
+  /* filter: blur(); */
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+  gap: 9px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  flex-wrap: wrap;
+  /* padding-bottom: px; */
+}
+.footer ul li a {
+  color: rgb(83, 83, 83);
+  /* left: 2px;    */
+  font-size: 13px;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  color: #636363;
+}
+.footer ul button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* filter: invert(); */
+  background-color: #080707;
+  color: aliceblue;
+  border: 1px solid white;
+  border-radius: 20px;
+  /* padding: 7px; */
+  padding: 3px 10px;
+}
+.nav {
+  display: flex;
+  background-color: #090909;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  margin-top: 17px;
+  border-radius: 10px;
+}
+.arrow {
+  display: flex;
+  margin-left: 17px;
+  gap: 10px;
+}
+.left-arrow {
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  filter: invert(1);
+  background-color: #f4f4f4;
+}
+
+.right-arrow {
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  filter: invert(1);
+  background-color: #f4f4f4;
+}
+.Signup {
+  font-size: 17px;
+  background: none;
+  border: none;
+  color: #8b8b8b;
+}
+.Signup:hover {
+  color: aliceblue;
+}
+.login {
+  width: 120px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 36px;
+  border: none;
+  font-size: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 35px;
+}
+.login:hover {
+  transform: scale(1.1);
+}
+.spotifyPlaylist {
+  background-color: #121212;
+  height: 89%;
+  position: relative;
+
+  border-bottom-left-radius: 10px;
+}
+.spotifyPlaylist h1 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.cardcontainer {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+  /* border: 1px solid red; */
+  padding-left: 26px;
+  flex-wrap: wrap;
+}
+.card {
+  /* border: 1px solid red; */
+  width: 154px;
+  background-color: #171717;
+  padding: 17px;
+  padding-top: 9px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+
+  /* padding-top: 10px;
+  
+  /* padding-top: 10px ; */
+}
+.card-img img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.songDescription {
+  color: #767676;
+}
+/* playbar */
+.playBar {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-color: rgb(133, 176, 106);
+  width: 90%;
+  height: 50px;
+}
+.songbutton{
+    display: flex;
+    /* align-items: center; */
+}

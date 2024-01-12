@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
     <link
       rel="shortcut icon"
       href="./Spotify_icon.svg.png"
@@ -76,101 +77,201 @@
           </div>
         </div>
         <div class="spotifyPlaylist">
-            <h1>SpotifyPlaylist</h1>
-            <div class="cardcontainer">
-                <div class="card">
-                  
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Sleep</div>
-                    <div class="songDescription">Gentle Ambient piano to help you fall asleep. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000028998614b3281e12596844039" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Night Rain</div>
-                    <div class="songDescription"> Sleep with sounds of pouring rain and occasional rolling thunder. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027e858e4098c8a256ca51d770" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">lofi sleep</div>
-                    <div class="songDescription">Instrumental beats for a restful night's sleep. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Deep Sleep</div>
-                    <div class="songDescription">Soothing, minimalist ambient for deep sleep. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002e3c324443862abeb46220f00" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">White Noise 10 Hours</div>
-                    <div class="songDescription">Ten hours long continuous white noise to help you relax and let go. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002008092db062ae57983ed0141" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Jazz for Sleep</div>
-                    <div class="songDescription">Let these calm Jazz tracks lull you to sleep. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002fbf8dcb03962d651152e64a4" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Brown Noise</div>
-                    <div class="songDescription">Soothing, low frequencies for relaxation, meditation or sleep. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002d9e758880a1effe4f5d62062" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Nightstorms</div>
-                    <div class="songDescription">12 hours of comforting sounds of thunder and rain.</div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000023a6b28e001177d865cbbc073" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Sleep</div>
-                    <div class="songDescription">Gentle Ambient piano to help you fall asleep. </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000275da071e376f9e6bf9c05713" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
-                    </div>
-                    <div class="songname">Dreamy Forest Music</div>
-                    <div class="songDescription">TWander into the magical mix of music, water, birds, and calmness. </div>
-                </div>
-
+          <h1>SpotifyPlaylist</h1>
+          <div class="cardcontainer">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Sleep</div>
+              <div class="songDescription">
+                Gentle Ambient piano to help you fall asleep.
+              </div>
             </div>
-            <div class="playBar">
-                <div class="songinfo"></div>
-                <div class="songbutton">
-                    <img src="./previous.svg" alt="">
-                    <img src="./play.svg" alt="">
-                    <img src="./next.svg" alt="">
-                </div>
-                <div class="songtime"></div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f000000028998614b3281e12596844039"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Night Rain</div>
+              <div class="songDescription">
+                Sleep with sounds of pouring rain and occasional rolling
+                thunder.
+              </div>
             </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f000000027e858e4098c8a256ca51d770"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">lofi sleep</div>
+              <div class="songDescription">
+                Instrumental beats for a restful night's sleep.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Deep Sleep</div>
+              <div class="songDescription">
+                Soothing, minimalist ambient for deep sleep.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f00000002e3c324443862abeb46220f00"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">White Noise 10 Hours</div>
+              <div class="songDescription">
+                Ten hours long continuous white noise to help you relax and let
+                go.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f00000002008092db062ae57983ed0141"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Jazz for Sleep</div>
+              <div class="songDescription">
+                Let these calm Jazz tracks lull you to sleep.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f00000002fbf8dcb03962d651152e64a4"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Brown Noise</div>
+              <div class="songDescription">
+                Soothing, low frequencies for relaxation, meditation or sleep.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  arrgb(41, 48, 37)e"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f00000002d9e758880a1effe4f5d62062"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Nightstorms</div>
+              <div class="songDescription">
+                12 hours of comforting sounds of thunder and rain.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f000000023a6b28e001177d865cbbc073"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Sleep</div>
+              <div class="songDescription">
+                Gentle Ambient piano to help you fall asleep.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="lazy"
+                  src="https://i.scdn.co/image/ab67706f0000000275da071e376f9e6bf9c05713"
+                  data-testid="card-image"
+                  alt=""
+                  class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"
+                />
+              </div>
+              <div class="songname">Dreamy Forest Music</div>
+              <div class="songDescription">
+                TWander into the magical mix of music, water, birds, and
+                calmness.
+              </div>
+            </div>
+          </div>
+          <div class="playBar">
+            <div class="songinfo"></div>
+            <div class="songbutton">
+              <img src="./previous.svg" alt="" />
+              <img src="./play.svg" alt="" />
+              <img src="./next.svg" alt="" />
+            </div>
+            <div class="songtime"></div>
+          </div>
         </div>
-
       </div>
     </div>
   </body>

@@ -10,7 +10,7 @@ async function getsongs() {
   for (let index = 0; index < as.length; index++) {
     const element = as[index];
     if (element.href.endsWith(".mp3")) {
-      songs.push(element.href);
+      songs.push(element.href.split("/songs/")[1]);
     }
   }
   return songs;
@@ -20,9 +20,31 @@ async function main() {
   // get the list of  all the songs
   let songs = await getsongs();
   console.log(songs);
+  let songsul = document
+    .querySelector(".songlist")
+    .getElementsByTagName("ul")[0];
+  for (const song of songs) {
+    songsul.innerHTML =
+      songsul.innerHTML +
+      `<li> <img width="30" src="./music.svg" alt="" />
+                <div class="mar">
+                <div class="info">
+                  <div class="song-n">${
+                    song.replaceAll("%20", "").split("-")[1]
+                  }</div>
+                  <div>AFRIDE</div>
+                </div>
+
+                <div class="playnow">
+                  <span>Play Now</span>
+                  <img src="./play.svg" alt="" />
+                </div></div>
+    </li>`;
+  }
+
   //   play the first songs
   let audio = new Audio(songs[0]);
-  //   audio.play();
+  // audio.play();
 }
 
-main(); 
+main();
